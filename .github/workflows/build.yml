@@ -30,3 +30,7 @@ jobs:
             docs/
             README.md
             LICENSE
+            Install.cmd
+            Uninstall.cmd
+            START-HERE.txt
+
