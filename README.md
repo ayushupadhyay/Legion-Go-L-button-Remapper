@@ -1,4 +1,4 @@
-# Legion L Game Bar
+# Legion Go L button Remapper
 
 A small Windows listener that opens **Xbox Game Bar** when you press **Legion L** on a supported **Lenovo Legion Go S**.
 
@@ -116,3 +116,4 @@ See [implementation notes](docs/IMPLEMENTATION.md), [release checklist](docs/REL
 The vendor-interface approach and Go S layout were investigated using [OpenController](https://github.com/Brunovncs/OpenController), [GoTweaks](https://github.com/corando98/GoTweaks) and physical report tests. This repository contains a small Windows implementation and no external runtime library.
 
 MIT licensed. Unofficial community project; not affiliated with Lenovo or Microsoft.
+
