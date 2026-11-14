@@ -1,0 +1,32 @@
+name: Build Windows preview
+on:
+  workflow_dispatch:
+  push:
+    paths: ['src/**', 'scripts/**', '.github/workflows/**']
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Parse scripts and compile
+        shell: powershell
+        run: |
+          Get-ChildItem scripts -Filter *.ps1 | ForEach-Object {
+            $tokens = $null; $errors = $null
+            [System.Management.Automation.Language.Parser]::ParseFile($_.FullName, [ref]$tokens, [ref]$errors) | Out-Null
+            if ($errors) { throw ($errors | Out-String) }
+          }
+          ./scripts/Build.ps1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: legion-l-gamebar-preview
+          path: |
+            dist/LegionLGameBar.exe
+            src/
+            scripts/
+            docs/
+            README.md
+            LICENSE
