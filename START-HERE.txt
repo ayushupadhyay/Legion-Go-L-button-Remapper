@@ -1,0 +1,13 @@
+LEGION GO L BUTTON REMAPPER — PREVIEW
+
+INSTALL
+1. Extract this ZIP completely.
+2. Double-click Install.cmd.
+3. Follow the prompts and test Legion L.
+
+UNINSTALL
+Search Start for "Uninstall Legion Go L button Remapper",
+or double-click Uninstall.cmd from this folder.
+
+Tested on Legion Go S 83N6 / 8APU1 in X-input mode only.
+Read README.md for limitations. The package is unsigned.
