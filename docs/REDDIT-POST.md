@@ -1,6 +1,6 @@
 # Reddit post draft
 
-Title: I made a small Legion Go S listener to open Game Bar with Legion L — preview, source included
+Title: Legion Go L button Remapper — a small Legion Go S listener to open Game Bar with Legion L — preview, source included
 
 I wanted Legion L to open Windows Game Bar while keeping Lenovo's power and fan controls, so I built a small Windows listener for my Legion Go S.
 
@@ -12,7 +12,8 @@ The listener does not suppress Lenovo's own response. There is an optional rever
 
 Tested on one Legion Go S 83N6 / 8APU1 in X-input mode. The prototype button action works; the packaged installer still needs clean-machine testing. Other Legion models are not claimed as supported.
 
-Source, build instructions, uninstall steps and known limitations: https://github.com/ayushupadhyay/legion-l-gamebar.
+Source, build instructions, uninstall steps and known limitations: https://github.com/ayushupadhyay/Legion-Go-L-button-Remapper.
 
 Sharing this as a preview for review and feedback, not as an official Lenovo/Microsoft tool.
+
 
